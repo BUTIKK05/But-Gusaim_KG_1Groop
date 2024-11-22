@@ -100,7 +100,9 @@ public class ColorConverterApp extends Application {
 
 
         TextField rgb = new TextField();
+        rgb.setPrefWidth(200);
         TextField cmyk = new TextField();
+        cmyk.setPrefWidth(200);
 
         ColorPicker colorPicker = new ColorPicker();
 
@@ -189,7 +191,7 @@ public class ColorConverterApp extends Application {
         HBox rgbBox = new HBox(10, new Label("RGB:"), rgb);
         HBox cmykBox = new HBox(10, new Label("CMYK:"), cmyk);
 
-        hlsToRgbCmykBox = new VBox(15, hbox1, hbox2, hbox3, colorBox, rgbBox, cmykBox);
+        hlsToRgbCmykBox = new VBox(25, hbox1, hbox2, hbox3, colorBox, rgbBox, cmykBox);
     }
 
 
